@@ -1,0 +1,5 @@
+<ul data-controller="table">
+  <% @list.items.each do |item|%>
+    <li><%= item.id %> - <%= item.note %> <span data-action="click->table#remove"> x </span></li>
+  <% end %>
+</ul>
