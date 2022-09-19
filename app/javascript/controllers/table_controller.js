@@ -9,4 +9,8 @@ export default class extends Controller {
   remove() {
     console.log('removed')
   }
+
+  add() {
+    console.log('add')
+  }
 }
