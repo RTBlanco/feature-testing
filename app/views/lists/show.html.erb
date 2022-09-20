@@ -1,5 +1,9 @@
-<ul data-controller="table">
-  <% @list.items.each do |item|%>
-    <li><%= item.id %> - <%= item.note %> <span data-action="click->table#remove"> x </span></li>
-  <% end %>
-</ul>
+<div id='table' data-controller="table">
+  <button data-action="click->table#add">Save Url</button>
+
+  <ul data-table-target='table'>
+    <% @list.items.each do |item|%>
+      <li id=<%= item.id %>><%= item.id %> - <%= item.note %> <span data-action="click->table#remove"> x </span></li>
+    <% end %>
+  </ul>
+</div>
